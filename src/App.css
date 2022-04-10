@@ -15,18 +15,35 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: scroll;
+  height: 81.06637649619151vh;
 }
 
+
+/* ---------- Navbar ---------- */
 @media (min-width: 992px) {
   .navbar {
     background-color: transparent !important;
   }
 }
 
-/* ---------- Navbar ---------- */
-nav .navbar-brand {
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+}
+
+nav {
+  transition:0.3s ease-in-out;
+}
+
+.navbar-brand {
   font-family: 'Dancing Script', cursive;
   color: #ffc800 !important;
+  transition: 0.3s ease-in-out;
+  font-weight: 700;
+}
+.navbar-brand:hover {
+  transform: translateY(-3px);
 }
 
 nav .navbar-nav .nav-item .nav-link{
@@ -58,9 +75,18 @@ nav .navbar-toggler {
   align-items: center;
 }
 
+.navbar-shrink {
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  background-color: #212529 !important;
+}
+.navbar-shrink .navbar-brand {
+  font-size: 1.5rem !important;
+}
+
 /* ---------- Header ---------- */
-header {
-  height: 80vh;
+.header {
+  padding-top: 17rem;
 }
 
 .header-subheading {
@@ -112,4 +138,12 @@ header {
   font-style: italic;
   font-family: 'Roboto Slab', serif;
   color: #6c757d;
+}
+
+.page-section .row {
+  margin-top: 4rem;
+}
+
+.page-section h4 {
+  font-weight: 700;
 }
