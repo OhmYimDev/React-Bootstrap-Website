@@ -9,6 +9,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
 .bg-img {
   background-image: url("./assets/img/header-bg.jpg");
   background-repeat: no-repeat;
@@ -147,3 +151,135 @@ nav .navbar-toggler {
 .page-section h4 {
   font-weight: 700;
 }
+
+/* ---------- Portfolio ---------- */
+.portfolio-link {
+  position: relative;
+  display: block;
+}
+
+.portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 200, 0, 0.9);
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+.portfolio-hover:hover {
+  opacity: 1;
+}
+
+.portfolio-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.portfolio-caption-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.portfolio-caption-subheading {
+  font-style: italic;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* ---------- About ---------- */
+.timeline {
+  position: relative;
+  padding: 0;
+}
+.timeline:before {
+  position: absolute;
+  width: 2px;
+  background-color: red;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+.timeline > li:after, .timeline > li:before {
+  display: table;
+  content: " ";
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline-panel {
+  display: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+.timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+.timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: #fff;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #ffc800;
+}
+
+.timeline > li .timeline-inverted > .timeline-panel {
+  float: left;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+.timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
+  text-transform: none;
+}
+.timeline .timeline-body > ul,
+.timeline .timeline-body > p {
+  margin-bottom: 0;
+}
+

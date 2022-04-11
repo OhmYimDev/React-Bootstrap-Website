@@ -13,7 +13,7 @@ import Script from './script';
 function App() {
   return (
     <div className='App' id='page-top'>
-      {/* Navigation */}
+      {/* ---------- Navigation ---------- */}
       <div className='bg-img'>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id='mainNav'>
           <div className="container">
@@ -44,7 +44,7 @@ function App() {
           </div>
         </nav> 
 
-        {/* Header */}
+        {/* ---------- Header ---------- */}
         <header className='header text-center d-flex align-items-center text-white'>
           <div className='container'>
             <div className='header-subheading'>Welcome To Our Studio!</div>
@@ -58,7 +58,7 @@ function App() {
         </header>
       </div>
 
-        {/* Services */}
+        {/* ---------- Services ---------- */}
         <section className='page-section' id='services' >
           <div className='container'>
             <div className='text-center'>
@@ -94,7 +94,7 @@ function App() {
           </div>
         </section>
 
-        {/* Portfolio Grid */}
+        {/* ---------- Portfolio Grid ---------- */}
         <section className='page-section bg-light' id='portfolio'>
           <div className='container'>
             <div className='text-center'>
@@ -104,12 +104,12 @@ function App() {
             <div className='row'>
 
               <div className='col-lg-4 col-sm-6 mb-4'>
-                {/* Portfolio item 1 */}
+                {/* ---------- Portfolio item 1 ---------- */}
                 <div className='portfolio-item'>
                   <a className='portfolio-link' data-bs-toggle="modal" href='#portfolioModal1'>
                     <div className='portfolio-hover'>
                       <div className='portfolio-hover-content'>
-                        <FontAwesomeIcon icon={faPlus}/>
+                        <FontAwesomeIcon className='fa-3x text-white' icon={faPlus}/>
                       </div>
                     </div>
                     <img className='img-fluid' src={require("./assets/img/portfolio/1.jpg")} alt=''/>
@@ -122,95 +122,167 @@ function App() {
               </div>
 
               <div className='col-lg-4 col-sm-6 mb-4'>
-                {/* Portfolio item 2 */}
+                {/* ---------- Portfolio item 2 ---------- */}
                 <div className='portfolio-item'>
                   <a className='portfolio-link' data-bs-toggle="modal" href='#portfolioModal1'>
                     <div className='portfolio-hover'>
                       <div className='portfolio-hover-content'>
-                        <FontAwesomeIcon icon={faPlus}/>
+                        <FontAwesomeIcon className='fa-3x text-white' icon={faPlus}/>
                       </div>
                     </div>
                     <img className='img-fluid' src={require("./assets/img/portfolio/2.jpg")} alt=''/>
                   </a>
                   <div className='portfolio-caption'>
-                    <div className='portfolio-caption-heading'>Threads</div>
-                    <div className='portfolio-caption-subheading text-muted'>Illustration</div>
+                    <div className='portfolio-caption-heading'>Explore</div>
+                    <div className='portfolio-caption-subheading text-muted'>Graphic Design</div>
                   </div>
                 </div>
               </div>
 
               <div className='col-lg-4 col-sm-6 mb-4'>
-                {/* Portfolio item 3 */}
+                {/* ---------- Portfolio item 3 ---------- */}
                 <div className='portfolio-item'>
                   <a className='portfolio-link' data-bs-toggle="modal" href='#portfolioModal1'>
                     <div className='portfolio-hover'>
                       <div className='portfolio-hover-content'>
-                        <FontAwesomeIcon icon={faPlus}/>
+                        <FontAwesomeIcon className='fa-3x text-white' icon={faPlus}/>
                       </div>
                     </div>
                     <img className='img-fluid' src={require("./assets/img/portfolio/3.jpg")} alt=''/>
                   </a>
                   <div className='portfolio-caption'>
-                    <div className='portfolio-caption-heading'>Threads</div>
-                    <div className='portfolio-caption-subheading text-muted'>Illustration</div>
+                    <div className='portfolio-caption-heading'>Finish</div>
+                    <div className='portfolio-caption-subheading text-muted'>Identity</div>
                   </div>
                 </div>
               </div>
 
               <div className='col-lg-4 col-sm-6 mb-4'>
-                {/* Portfolio item 4 */}
+                {/* ---------- Portfolio item 4 ---------- */}
                 <div className='portfolio-item'>
                   <a className='portfolio-link' data-bs-toggle="modal" href='#portfolioModal1'>
                     <div className='portfolio-hover'>
                       <div className='portfolio-hover-content'>
-                        <FontAwesomeIcon icon={faPlus}/>
+                        <FontAwesomeIcon className='fa-3x text-white' icon={faPlus}/>
                       </div>
                     </div>
                     <img className='img-fluid' src={require("./assets/img/portfolio/4.jpg")} alt=''/>
                   </a>
                   <div className='portfolio-caption'>
-                    <div className='portfolio-caption-heading'>Threads</div>
-                    <div className='portfolio-caption-subheading text-muted'>Illustration</div>
+                    <div className='portfolio-caption-heading'>Lines</div>
+                    <div className='portfolio-caption-subheading text-muted'>Branding</div>
                   </div>
                 </div>
               </div>
 
               <div className='col-lg-4 col-sm-6 mb-4'>
-                {/* Portfolio item 5 */}
+                {/* ---------- Portfolio item 5 ---------- */}
                 <div className='portfolio-item'>
                   <a className='portfolio-link' data-bs-toggle="modal" href='#portfolioModal1'>
                     <div className='portfolio-hover'>
                       <div className='portfolio-hover-content'>
-                        <FontAwesomeIcon icon={faPlus}/>
+                        <FontAwesomeIcon className='fa-3x text-white' icon={faPlus}/>
                       </div>
                     </div>
                     <img className='img-fluid' src={require("./assets/img/portfolio/5.jpg")} alt=''/>
                   </a>
                   <div className='portfolio-caption'>
-                    <div className='portfolio-caption-heading'>Threads</div>
-                    <div className='portfolio-caption-subheading text-muted'>Illustration</div>
+                    <div className='portfolio-caption-heading'>Southwest</div>
+                    <div className='portfolio-caption-subheading text-muted'>Website Design</div>
                   </div>
                 </div>
               </div>
 
               <div className='col-lg-4 col-sm-6 mb-4'>
-                {/* Portfolio item 6 */}
+                {/* ---------- Portfolio item 6 ---------- */}
                 <div className='portfolio-item'>
                   <a className='portfolio-link' data-bs-toggle="modal" href='#portfolioModal1'>
                     <div className='portfolio-hover'>
                       <div className='portfolio-hover-content'>
-                        <FontAwesomeIcon icon={faPlus}/>
+                        <FontAwesomeIcon className='fa-3x text-white' icon={faPlus}/>
                       </div>
                     </div>
                     <img className='img-fluid' src={require("./assets/img/portfolio/6.jpg")} alt=''/>
                   </a>
                   <div className='portfolio-caption'>
-                    <div className='portfolio-caption-heading'>Threads</div>
-                    <div className='portfolio-caption-subheading text-muted'>Illustration</div>
+                    <div className='portfolio-caption-heading'>Window</div>
+                    <div className='portfolio-caption-subheading text-muted'>Photography</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ---------- About ---------- */}
+        <section className='page-section' id='about'>
+          <div className='container'>
+            <div className='text-center'>
+              <h2 className='section-heading text-uppercase'>About</h2>
+              <h3 className='section-subheading text-muted'>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <ul className='timeline'>
+              <li>
+                <div className='timeline-image'>
+                  <img className='rounded-circle img-fluid' src={require("./assets/img/about/1.jpg")} alt=''/>
+                </div>
+                <div className='timeline-panel'>
+                  <div className='timeline-heading'>
+                    <h4>2009-2011</h4>
+                    <h4 className='subheading'>Our Humble Beginnings</h4>
+                  </div>
+                  <div className='timeline-body'>
+                    <p className='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li className='timeline-inverted'>
+                <div className='timeline-image'>
+                  <img className='rounded-circle img-fluid' src={require("./assets/img/about/2.jpg")} alt=''/>
+                </div>
+                <div className='timeline-panel'>
+                  <div className='timeline-heading'>
+                    <h4>March 2011</h4>
+                    <h4 className='subheading'>An Agency is Born</h4>
+                  </div>
+                  <div className='timeline-body'>
+                    <p className='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className='timeline-image'>
+                  <img className='rounded-circle img-fluid' src={require("./assets/img/about/3.jpg")} alt=''/>
+                </div>
+                <div className='timeline-panel'>
+                  <div className='timeline-heading'>
+                    <h4>December 2015</h4>
+                    <h4 className='subheading'>Transition to Full Service</h4>
+                  </div>
+                  <div className='timeline-body'>
+                    <p className='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li className='timeline-inverted'>
+                <div className='timeline-image'>
+                  <img className='rounded-circle img-fluid' src={require("./assets/img/about/4.jpg")} alt=''/>
+                </div>
+                <div className='timeline-panel'>
+                  <div className='timeline-heading'>
+                    <h4>July 2020</h4>
+                    <h4 className='subheading'>Phase Two Expansion</h4>
+                  </div>
+                  <div className='timeline-body'>
+                    <p className='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
           </div>
         </section>
     </div>
